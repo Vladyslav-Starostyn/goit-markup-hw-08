@@ -1,16 +1,27 @@
-.dignity__list {
-    display: flex;
-}
+
 .dignity__item {
-    width: 270px;
+    width: 100%;
+    margin-top: 30px;
 }
-.dignity__item +.dignity__item {
-    margin-left: 30px;
+  @media screen and (min-width: 768px) {
+    .dignity__list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    .dignity__item {
+            margin-left: 30px;
+            width: calc(100%/2-60px);
+  }
 }
+  @media screen and (min-width: 1200px) {
+      .dignity__item {
+          width: calc(100%/4-120px);
+      }
+    }
 .dignity__subtitle {
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.36;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--color-title);
@@ -23,7 +34,7 @@
     letter-spacing: 0.03em;
 }
 .dignity__icon {
-    width: 270px;
+    width: 100%;
     height: 120px;
     background: #F5F4FA;
     border-radius: 4px;

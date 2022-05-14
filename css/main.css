@@ -60,16 +60,26 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .conteiner {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 480px) {
+  .conteiner {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .conteiner {
+    width: 768px;
+  }
 }
 
 .header {
@@ -228,22 +238,30 @@ body {
   background-color: #188CE8;
 }
 
-.dignity__list {
-  display: flex;
-}
-
 .dignity__item {
-  width: 270px;
+  width: 100%;
+  margin-top: 30px;
 }
 
-.dignity__item + .dignity__item {
-  margin-left: 30px;
-}
+@media screen and (min-width: 768px) {
+  .dignity__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
+  .dignity__item {
+    width: 354px;
+    margin-left: 30px;
+  }
+
+  .dignity__item:nth-child(2n+1) {
+    margin-left: 0px;
+  }
+}
 .dignity__subtitle {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.36;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-title);
@@ -258,7 +276,7 @@ body {
 }
 
 .dignity__icon {
-  width: 270px;
+  width: 100%;
   height: 120px;
   background: #F5F4FA;
   border-radius: 4px;
