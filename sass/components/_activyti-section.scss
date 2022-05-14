@@ -1,0 +1,42 @@
+.activyti {
+    padding-top: 0;
+}
+
+.activyti__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-title);
+    margin-bottom: 50px;
+}
+
+.activyti__list {
+    display: flex;
+}
+
+.imedges+.imedges {
+    margin-left: 30px;
+}
+
+.activyti__card {
+    position: relative;
+}
+
+.activyti__text {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background-color: rgba(47, 48, 58, 0.8);
+}

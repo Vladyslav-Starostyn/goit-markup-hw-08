@@ -1,0 +1,114 @@
+.button-set {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.button-set__item+.button-set__item {
+    margin-left: 8px;
+}
+
+.button-set__button {
+    padding: 6px 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-title);
+    background: #F5F4FA;
+    border-radius: 4px;
+    border: none;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    cursor 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        &:focus,
+        &:hover {
+            color: #FFFFFF;
+            background-color: var(--accent-color);
+            cursor: pointer;
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                0px 1px 2px rgba(0, 0, 0, 0.08),
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+}
+
+
+
+.progects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.progects-card {
+    width: calc((100% - 60px)/3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    &:nth-last-child(-n + 3) {
+        margin-bottom: 0;
+    }
+    &:hover .progects-card__toptext {
+        transform: translateY(0);
+    }
+}
+
+.border {
+    background: #FFFFFF;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    padding: 20px 24px;
+}
+
+.progects-card__link {
+    display: block;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+}
+
+.progects-card__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2.00;
+    letter-spacing: 0.06em;
+    color: var(--color-title);
+}
+
+.progects-card__text {
+    margin-top: 4px;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--color-text);
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.progects-card__toptext {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 63px 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color: rgba(33, 150, 243, 0.9);
+}
