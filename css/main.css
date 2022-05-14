@@ -81,6 +81,11 @@ body {
     width: 768px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .conteiner {
+    width: 1200px;
+  }
+}
 
 .header {
   background-color: #FFFFFF;
@@ -250,12 +255,22 @@ body {
   }
 
   .dignity__item {
-    width: 354px;
     margin-left: 30px;
+    width: calc((100% - 30px) / 2);
   }
 
   .dignity__item:nth-child(2n+1) {
-    margin-left: 0px;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .dignity__item {
+    margin-left: 30px;
+    width: calc((100% - 60px) / 4);
+  }
+
+  .dignity__item:nth-child(1) {
+    margin-left: 0;
   }
 }
 .dignity__subtitle {
