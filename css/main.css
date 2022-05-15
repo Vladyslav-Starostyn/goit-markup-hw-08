@@ -204,30 +204,43 @@ body {
 }
 
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  max-height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--footer-color);
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../imedges/studio/Img\ Hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 
 .hero__title {
-  max-width: 696px;
+  max-width: 360px;
   margin-left: auto;
   margin-right: auto;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.61;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {
@@ -285,6 +298,11 @@ body {
   color: var(--color-title);
   margin-bottom: 10px;
   margin-top: 30px;
+}
+@media screen and (max-width: 767px) {
+  .dignity__subtitle {
+    text-align: center;
+  }
 }
 
 .dignity__text {
@@ -448,24 +466,48 @@ body {
 
 .clients__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-title);
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
 }
 
-.clients__item + .clients__item {
+.clients__item {
   margin-left: 30px;
+  margin-bottom: 30px;
+  width: calc((100% - 60px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .clients__item {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: calc((100% - 90px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    width: calc((100% - 180px) / 6);
+  }
 }
 
 .clients__link {
-  width: 170px;
   height: 92px;
   border-radius: 4px;
   border: 1px solid #AFB1B8;
@@ -538,13 +580,13 @@ body {
 }
 @media screen and (min-width: 768px) {
   .progects-card {
-    width: calc((100% - 90px) / 3);
+    width: calc((100% - 60px) / 2);
     margin-right: 30px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .progects-card {
-    width: calc((100% - 60px) / 2);
+    width: calc((100% - 90px) / 3);
   }
 }
 .progects-card:hover .progects-card__toptext {
