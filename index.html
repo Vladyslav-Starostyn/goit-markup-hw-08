@@ -18,10 +18,10 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!--<header class="header">
+    <header class="header">
       <div class="conteiner header__conteiner">
-        <a class="logo header__logo link" href=""
-          >Web<span class="header__logo--black">Studio</span></a
+        <a class="logo link" href=""
+          >Web<span class="logo--black">Studio</span></a
         >
         <nav class="navigation">
           <ul class="menu-list list">
@@ -59,8 +59,60 @@
             </a>
           </li>
         </ul>
+        <button type="button" class="menu-open">
+          <svg class="open-icon" width="40" height="40">
+            <use href="./imedges/icon/symbol-defs.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
       </div>
-    </header>-->
+      <div class="mob-menu conteiner conteiner--mob">
+        <button type="button" class="menu-close">
+          <svg class="open-icon" width="40" height="40">
+            <use href="./imedges/icon/symbol-defs.svg#icon-close_40px"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu__list list">
+          <li class="mob-menu__item">
+            <a class="mob-menu__link link mob-current" href="">Студия</a>
+          </li>
+          <li class="mob-menu__item">
+            <a class="mob-menu__link link" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="mob-menu__item">
+            <a class="mob-menu__link link" href="">Контакты</a>
+          </li>
+        </ul>
+        <ul class="mob-menu__secondlist list">
+          <li class="mob-menu__seconditem">
+            <a class="mob-menu__secondlink tel link" href="tel:+380961111111">
+              +38 096 111 11 11
+            </a>
+          </li>
+          <li class="mob-menu__seconditem">
+            <a
+              class="mob-menu__secondlink mob-menu__secondlink--min link"
+              href="mailto:info@devstudio.com"
+            >
+              info@devstudio.com
+            </a>
+          </li>
+        </ul>
+        <ul class="mob-soc list">
+          <li class="mob-soc__item">
+            <a class="mob-soc__link link" href="">Instagram</a>
+          </li>
+          <li class="mob-soc__item">
+            <a class="mob-soc__link link" href="">Twitter</a>
+          </li>
+          <li class="mob-soc__item">
+            <a class="mob-soc__link link" href="">Facebook</a>
+          </li>
+          <li class="mob-soc__item">
+            <a class="mob-soc__link link" href="">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </header>
     <main>
       <!-- section-1 -->
       <section class="hero section overlay">
@@ -433,8 +485,8 @@
       <div class="footer__conteiner conteiner">
         <div class="footer-block">
           <div class="footer-contacts">
-            <a class="logo footer__logo link" href=""
-              >Web<span class="footer__logo--white">Studio</span></a
+            <a class="logo link" href=""
+              >Web<span class="logo--white">Studio</span></a
             >
             <address class="address">
               <ul class="addres__list list">
